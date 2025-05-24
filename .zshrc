@@ -106,6 +106,10 @@ zsh_install() {
 }
 
 refresh() {
+  cd ~/gits/dotbot
+  git add .
+  git commit -m "Dotbot Upload"
+  git push --quiet origin main
   source ~/.zshrc && exec zsh
 }
 
