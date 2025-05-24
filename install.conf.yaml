@@ -1,17 +1,21 @@
 - defaults:
     link:
       relink: true
+      force: true
+      create: true
 
 - clean: ['~']
 
 - link:
-    ~/.tmux.conf: tmux.conf
-    ~/.vim: vim
-    ~/.vimrc: vimrc
+    ~/.zshrc: .zshrc
+    ~/.config/nvim: nvim
+    ~/.config/starship.toml: starship.toml
 
 - create:
-    - ~/downloads
-    - ~/.vim/undo-history
+    - ~/Downloads
+    - ~/gits
+    - ~/Screenshots
+    - ~/Sync
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
