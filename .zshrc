@@ -15,7 +15,7 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt extendedglob nomatch
 unsetopt autocd beep notify
-zstyle :compinstall filename '~/.zshrc'
+zstyle :compinstall filename '/home/mango/.zshrc'
 
 autoload -Uz compinit
 compinit
