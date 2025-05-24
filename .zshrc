@@ -111,6 +111,7 @@ refresh() {
   git commit -m "Dotbot Upload"
   git push --quiet origin main
   source ~/.zshrc && exec zsh
+  cd ~
 }
 
 zinit light zsh-users/zsh-autosuggestions
