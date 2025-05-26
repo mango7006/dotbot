@@ -35,7 +35,7 @@ alias la="eza -alh --color=auto --icons"
 alias cat="bat"
 alias rcat="cat"
 
-z() {
+zd() {
   __zoxide_z "$@" && ls
 }
 
