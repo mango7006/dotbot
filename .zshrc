@@ -35,6 +35,10 @@ alias la="eza -alh --color=auto --icons"
 alias cat="bat"
 alias rcat="cat"
 
+z() {
+  command z "$@" && ls
+}
+
 alias cp="cp -v"
 alias mv="mv -v"
 
