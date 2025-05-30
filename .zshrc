@@ -35,9 +35,7 @@ alias la="eza -alh --color=auto --icons"
 alias cat="bat"
 alias rcat="cat"
 
-alias cd="cd && echo 'use zd please dumbo'"
-
-zd() {
+cd() {
   __zoxide_z "$@" && ls
 }
 
