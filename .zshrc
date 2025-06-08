@@ -68,17 +68,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
-# Aliases: git
-alias ga='git add .'
-alias gb='git branch'
-alias gba='gb --all'
-alias gc='git commit'
-alias gd='git diff --output-indicator-new=" " --output-indicator-old=" "'
-alias gi='git init'
-alias gp='git push'
-alias gs='git status'
-alias gu='git pull'
-
 whatip() {
   ip a | grep 'inet ' | grep -v '127.0.0.1' | awk '{split($2, a, "/"); print a[1]}'
 }
