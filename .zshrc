@@ -75,12 +75,11 @@ whatip() {
 cleantmp() {
   local before=$(df --output=used / | tail -n1)
 
-  paccache -rk0
+  paccache -rk1
   sudo systemd-tmpfiles --clean
   sudo pacman -Scc --noconfirm
   paru -Scc --noconfirm
-  sudo journalctl --vacuum-time=1d
-  sudo systemd-tmpfiles --remove
+  sudo journalctl --vacuum-time=7d
   rm -rf ~/.cache/paru/clone/
   yes | trash-empty
 
